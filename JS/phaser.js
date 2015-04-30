@@ -17,7 +17,7 @@ function preload() {
 }
 
 var player;
-var enemySpeed = 50;
+var enemySpeed = (Math.random() * 100) + 25;
 var platforms;
 var score = 0;
 var lives = 3;
