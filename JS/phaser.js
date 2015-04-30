@@ -9,7 +9,7 @@ function preload() {
     game.load.image('platform', 'Images/platform.png');
     game.load.image('star', 'Images/star.png');
     game.load.image('finish', 'Images/finish.png');
-    game.load.image('enemy', 'Images/enemy.png');
+    game.load.image('enemy', 'Images/enemy2.png');
     game.load.image('logo', 'Images/logo.png');
     game.load.image('end', 'Images/logo2.png');
     game.load.image('dead', 'Images/dead.png');
@@ -80,22 +80,22 @@ function create() {
     game.camera.follow(player);
 
     var enemy = new Enemy(game, 400,385, 1, enemySpeed);
-    enemy.scale.setTo(0.5, 0.5);
+    enemy.scale.setTo(0.4, 0.4);
     enemy.body.gravity.y = 300;
     game.add.existing(enemy);
 
     enemy = new Enemy(game, 900, 385, 1 , enemySpeed);
-    enemy.scale.setTo(0.5, 0.5);
+    enemy.scale.setTo(0.4, 0.4);
     enemy.body.gravity.y = 300;
     game.add.existing(enemy);
 
     enemy = new Enemy(game, 1050, 110, 1 , enemySpeed);
-    enemy.scale.setTo(0.5, 0.5);
+    enemy.scale.setTo(0.4, 0.4);
     enemy.body.gravity.y = 300;
     game.add.existing(enemy);
 
     enemy = new Enemy(game, 1550, 385, 1 , enemySpeed);
-    enemy.scale.setTo(0.5, 0.5);
+    enemy.scale.setTo(0., 0.4);
     enemy.body.gravity.y = 300;
     game.add.existing(enemy);
 
